@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:context="com.san.emenu.chowmein.OrdersFragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".15"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".7"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:background="@color/darkred">
+
+            <TextView
+                android:id="@+id/itm_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="Item"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ordrditm_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text=" Price"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ordrditm_qty"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="Qty"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ordritm_subtot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="Sub. Tot."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/lv_orderstoinvc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:background="@drawable/whitelayout_bg">
+
+            <TextView
+                android:id="@+id/txttotl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".08"
+                android:gravity="center"
+                android:text="@string/total"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txttotlprice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:gravity="center|left"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtsrvctax"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".18"
+                android:gravity="center"
+                android:text="@string/srvctax"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtsrvctaxvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".08"
+                android:gravity="center|left"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtgrndtot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".12"
+                android:gravity="center"
+                android:text="@string/grndtot"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtgrndtotvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:gravity="center|left"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_margin="3dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtgrndtotvalue1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".37"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <Button
+                android:id="@+id/btnbillrqst"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".26"
+                android:text="@string/sendbillrqst"
+                android:textSize="20sp"
+                android:background="@drawable/buttonselect"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtgrndtotvalue2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".37"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".15">
+
+
+      <!--  <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgextra"
+            android:src="@drawable/newrest"
+            android:layout_gravity="center_vertical" />-->
+    </LinearLayout>
+
+</LinearLayout>

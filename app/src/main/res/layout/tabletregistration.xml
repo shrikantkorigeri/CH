@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dvc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@drawable/whitelayout_bg"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/TabregHEadTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/devceReg"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_model"
+        style="@style/lldevdesc600dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_below="@id/TabregHEadTV"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/txtdeviceregleft600dp"
+            android:text="@string/model" />
+
+        <TextView
+            android:id="@+id/txtcolon"
+            style="@style/txtdevicecolon600dp"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtmodel"
+            style="@style/txtdeviceregright600dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_brand"
+        style="@style/lldevdesc600dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_below="@id/ll_model"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/txtdeviceregleft600dp"
+            android:text="@string/brand" />
+
+        <TextView
+            android:id="@+id/txtcolon1"
+            style="@style/txtdevicecolon600dp"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtbrand"
+            style="@style/txtdeviceregright600dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_serialno"
+        style="@style/lldevdesc600dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/txtdeviceregleft600dp"
+            android:text="@string/serialno" />
+
+        <TextView
+            android:id="@+id/txtcolon2"
+            style="@style/txtdevicecolon600dp"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtserialno"
+            style="@style/txtdeviceregright600dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_macaddress"
+        style="@style/lldevdesc600dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/txtdeviceregleft600dp"
+            android:text="@string/macadd" />
+
+        <TextView
+            android:id="@+id/txtcolon3"
+            style="@style/txtdevicecolon600dp"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtmacadd"
+            style="@style/txtdeviceregright600dp" />
+    </LinearLayout>
+    <!-- </RelativeLayout> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1">
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/register"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/buttonselect"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"/>
+
+</LinearLayout>

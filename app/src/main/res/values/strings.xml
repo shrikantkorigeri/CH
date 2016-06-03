@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ch1.7.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu">MENU</string>
+    <string name="table">TABLES</string>
+    <string name="ordrs">ORDERS</string>
+    <string name="services">SERVICES</string>
+    <string name="billrqst">BILL RQST</string>
+    <string name="logout">LOGOUT</string>
+    <string name="ingrdtns">INGREDIENTS</string>
+    <string name="mainmenu">Main Menu</string>
+    <string name="submenu">Sub Menu</string>
+    <string name="itms">Dishes</string>
+    <string name="urorders">Your Orders</string>
+    <string name="placeorder">PLACE ORDER</string>
+    <string name="ordermore">ORDER MORE</string>
+    <string name="total">Total :</string>
+    <string name="srvctax">Service Tax(10%) :</string>
+    <string name="grndtot">Grand Total :</string>
+    <string name="sendbillrqst">Bill Request</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="ipaddress">SERVER IP</string>
+    <string name="back">BACK</string>
+    <string name="model">Model</string>
+    <string name="serialno">Serial No.</string>
+    <string name="brand">Brand</string>
+    <string name="macadd">Mac Address</string>
+    <string name="devceReg">Device Registration</string>
+    <string name="colon">:</string>
+    <string name="register">REGISTER</string>
+    <string name="showpswd">Show Password</string>
+    <string name="action">ACTION</string>
+    <string name="dishname">DISH NAME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login_screen2">LoginScreen2</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

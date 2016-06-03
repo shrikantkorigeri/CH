@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.san.emenu.chowmein.EmenuMain">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:orientation="horizontal"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="2dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnmenu"
+            style="@style/btnsmainmenu"
+            android:background="@drawable/menu" />
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btnservice"
+            style="@style/btnsmainmenu"
+            android:background="@drawable/servicered" />
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+
+
+        <Button
+            android:id="@+id/btninvoice"
+            style="@style/btnsmainmenu"
+            android:background="@drawable/invoicered" />
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btnordrs"
+            style="@style/btnsmainmenu"
+            android:background="@drawable/videofade" />
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btnadmin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".08"
+            android:background="@drawable/admin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frgmntgroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".82"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="3dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".06"
+        android:orientation="horizontal"
+        android:layout_marginLeft="3dp"
+        android:background="@color/vdarkorange"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".16"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="TIME :" />
+
+            <TextView
+                android:id="@+id/txtcurrenttime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:gravity="center|left"
+                android:textColor="@color/white"
+                android:text="" />
+        </LinearLayout>
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtuser"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="TABLE No. :" />
+
+            <TextView
+                android:id="@+id/txttblno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="99" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txttbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".45"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="WAITER :" />
+
+            <TextView
+                android:id="@+id/txtwiatername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".55"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

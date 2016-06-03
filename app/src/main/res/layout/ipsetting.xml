@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="200dp"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/ipheadTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Server Address Setting"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/et_ipaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Enter IP Address here"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonselect"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttonselect"
+            android:layout_marginBottom="5dp"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

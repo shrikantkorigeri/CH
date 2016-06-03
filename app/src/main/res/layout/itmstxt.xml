@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_click"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="5dp"
+    android:background="#40f5f1de"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/ll_nameprice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/itm_name"
+            style="@style/marqueestyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".69"
+            android:gravity="center|left"
+            android:text="Itm Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itm_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:gravity="center|right"
+            android:text="Itm Price"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1">
+
+            <ImageView
+                android:id="@+id/imgplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/plus" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

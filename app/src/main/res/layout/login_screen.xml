@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landlogin"
+    android:fitsSystemWindows="true"
+    tools:context="com.san.emenu.chowmein.LoginScreen">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:drawableLeft="@drawable/user"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:text="test"
+            android:singleLine="true"
+            android:textColorHint="#bbbbbb">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/edittext_top_bg"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/password"
+            android:text="1234"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:textColorHint="#bbbbbb" />
+
+        <CheckBox
+
+            android:id="@+id/chkShowPswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="150dp"
+            android:text="@string/showpswd"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            style="@style/DefaultButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_default_bg"
+            android:padding="10dp"
+            android:text="@string/login" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/ipaddress"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:id="@+id/txtipaddress"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="RESET"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:id="@+id/txtreset"
+        android:layout_alignTop="@+id/txtipaddress"
+        android:layout_toRightOf="@+id/txtipaddress"
+        android:layout_toEndOf="@+id/txtipaddress" />
+
+
+</RelativeLayout>

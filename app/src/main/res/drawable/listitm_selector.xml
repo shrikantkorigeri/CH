@@ -1,0 +1,37 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selected Item -->
+   <!-- <item android:drawable="@color/seagreen" android:state_selected="true" />-->
+
+    <!-- Default Item -->
+   <!-- <item android:drawable="@android:color/darker_gray" android:state_selected="false" />-->
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" android:radius="3dip" android:topLeftRadius="10dp" android:topRightRadius="10dp" />
+
+            <stroke android:width="1dip" android:color="#78AB46" />
+
+            <gradient android:angle="-90" android:endColor="#01aebf" android:startColor="#01aebf" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" android:radius="0dip" android:topLeftRadius="10dp" android:topRightRadius="10dp" />
+
+            <stroke android:width="1dip" android:color="#78AB46" />
+
+            <solid android:color="#01aebf" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" android:radius="0dip" android:topLeftRadius="0dp" android:topRightRadius="0dp" />
+
+            <stroke android:width="1dip" android:color="#78AB46" />
+
+            <gradient android:angle="-90" android:endColor="@color/darkred" android:startColor="@color/darkred" />
+        </shape>
+    </item>
+
+</selector>

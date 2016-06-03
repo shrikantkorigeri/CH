@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.san.emenu.chowmein.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@color/vdarkorange"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txtmainmenu"
+            style="@style/txtsmeufrgmnts"
+            android:layout_weight=".27"
+            android:text="@string/mainmenu"
+            android:textColor="#FFFFFF" />
+
+        <View style="@style/viewmenufr" />
+
+        <TextView
+            android:id="@+id/txtsubmenu"
+            style="@style/txtsmeufrgmnts"
+            android:layout_weight=".31"
+            android:text="@string/submenu"
+            android:textColor="#FFFFFF" />
+
+        <View style="@style/viewmenufr" />
+
+        <TextView
+            android:id="@+id/txtitm"
+            style="@style/txtsmeufrgmnts"
+            android:layout_weight=".32"
+            android:text="@string/itms"
+            android:textColor="#FFFFFF" />
+
+        <View style="@style/viewmenufr" />
+
+        <RelativeLayout
+            android:id="@+id/rl_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#dfce98"
+            android:layout_weight=".085">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cart" />
+
+            <TextView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:text="0"
+                android:id="@+id/txtcartcnt"
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:textSize="18sp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/txtround_bg"/>
+
+        </RelativeLayout>
+
+        <!-- <TextView
+             android:id="@+id/urcart"
+             style="@style/txtsmeufrgmnts"
+             android:layout_weight=".1"
+             android:text="@string/urorders"
+             android:textColor="#FFFFFF" />-->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/transparent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ListView
+                android:id="@+id/lv_category"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".79"
+                android:cacheColorHint="@color/darkgreen"
+                android:choiceMode="singleChoice"
+                android:dividerHeight="2dp"
+                android:listSelector="@color/blue" />
+
+            <ImageView
+                android:id="@+id/imgemenulogo"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_weight=".21"
+                android:layout_gravity="center"
+                android:src="@drawable/emenu" />
+
+        </LinearLayout>
+
+        <View style="@style/viewmenufr" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".31"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtmainmenuname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".09"
+                android:background="@drawable/bar"
+                android:gravity="center|top"
+                android:text="@string/mainmenu"
+
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/lv_subcat"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".91"
+                android:choiceMode="singleChoice"
+                android:dividerHeight="2dp" />
+        </LinearLayout>
+
+
+        <View style="@style/viewmenufr" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".42"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/txtsubmenuname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".09"
+                android:background="@drawable/bar"
+                android:gravity="center|top"
+                android:text="@string/submenu"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ListView
+                android:id="@+id/lv_items"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".91"
+                android:choiceMode="singleChoice"
+                android:layout_marginRight="6dp"
+                android:dividerHeight="2dp" />
+
+        </LinearLayout>
+
+        <View style="@style/viewmenufr" />
+
+        <!--  <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight=".31"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+              <ListView
+                  android:id="@+id/lv_cart"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight=".88"
+                  android:choiceMode="singleChoice" />
+
+              <Button
+                  android:id="@+id/btnplaceorder"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight=".12"
+                  android:background="@color/purered"
+                  android:text="@string/placeorder"
+                  android:textColor="@color/white"
+                  android:textSize="22sp" />
+
+          </LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>
